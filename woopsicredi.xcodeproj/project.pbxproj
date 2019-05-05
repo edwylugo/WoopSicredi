@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5900E2D3227E4E6700087589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E2D2227E4E6700087589 /* AppDelegate.swift */; };
+		5900E2D5227E4E6700087589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E2D4227E4E6700087589 /* ViewController.swift */; };
+		5900E2D8227E4E6700087589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5900E2D6227E4E6700087589 /* Main.storyboard */; };
+		5900E2DB227E4E6700087589 /* woopsicredi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5900E2D9227E4E6700087589 /* woopsicredi.xcdatamodeld */; };
+		5900E2DD227E4E6A00087589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5900E2DC227E4E6A00087589 /* Assets.xcassets */; };
+		5900E2E0227E4E6A00087589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5900E2DE227E4E6A00087589 /* LaunchScreen.storyboard */; };
+		5900E2F6227E4E6A00087589 /* woopsicrediUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E2F5227E4E6A00087589 /* woopsicrediUITests.swift */; };
+		5900E304227E4ECD00087589 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E303227E4ECD00087589 /* AppCoordinator.swift */; };
+		5900E30F227E513B00087589 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E30E227E513B00087589 /* Money.swift */; };
+		5900E311227E516400087589 /* WSColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E310227E516400087589 /* WSColorPalette.swift */; };
+		5900E313227E517B00087589 /* WSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E312227E517B00087589 /* WSFont.swift */; };
+		5900E315227E51D200087589 /* WoopNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E314227E51D200087589 /* WoopNetworkService.swift */; };
+		5900E317227E520B00087589 /* WoopRequestErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E316227E520B00087589 /* WoopRequestErrorModel.swift */; };
+		5900E319227E525800087589 /* WoopDataModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E318227E525800087589 /* WoopDataModelProtocol.swift */; };
+		5900E31B227E527500087589 /* WoopRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E31A227E527500087589 /* WoopRequestProtocol.swift */; };
+		5900E31D227E529800087589 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E31C227E529800087589 /* Coordinator.swift */; };
+		5900E31F227E52AF00087589 /* DataResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E31E227E52AF00087589 /* DataResponseExtension.swift */; };
+		5900E321227E52D700087589 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E320227E52D700087589 /* StringExtension.swift */; };
+		5900E323227E52ED00087589 /* WSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E322227E52ED00087589 /* WSViewController.swift */; };
+		5900E325227E531000087589 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E324227E531000087589 /* DateExtension.swift */; };
+		5900E327227E539500087589 /* EventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E326227E539500087589 /* EventsCoordinator.swift */; };
+		5900E329227E53C800087589 /* EventsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E328227E53C800087589 /* EventsListVC.swift */; };
+		5900E32B227E53FE00087589 /* EventsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E32A227E53FE00087589 /* EventsListVM.swift */; };
+		5900E32D227E542000087589 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E32C227E542000087589 /* EventDetailVC.swift */; };
+		5900E32F227E544D00087589 /* EventDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E32E227E544D00087589 /* EventDetailVM.swift */; };
+		5900E331227E546C00087589 /* CheckInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E330227E546C00087589 /* CheckInVC.swift */; };
+		5900E333227E54A200087589 /* CheckInVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E332227E54A200087589 /* CheckInVM.swift */; };
+		5900E335227E54BB00087589 /* LoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E334227E54BB00087589 /* LoaderVC.swift */; };
+		5900E337227E54F000087589 /* EventsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E336227E54F000087589 /* EventsListTableViewCell.swift */; };
+		5900E339227E552600087589 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E338227E552600087589 /* AlertVC.swift */; };
+		5900E33B227E556800087589 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E33A227E556800087589 /* EventsService.swift */; };
+		5900E33D227E558500087589 /* FetchEventsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E33C227E558500087589 /* FetchEventsResponse.swift */; };
+		5900E33F227E55A600087589 /* FetchEventDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E33E227E55A600087589 /* FetchEventDetailsResponse.swift */; };
+		5900E341227E55BD00087589 /* SendEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E340227E55BD00087589 /* SendEventRequest.swift */; };
+		5900E343227E561600087589 /* EventsServiceMOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E342227E561600087589 /* EventsServiceMOCK.swift */; };
+		5900E345227E588D00087589 /* EventListVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E344227E588D00087589 /* EventListVMTests.swift */; };
+		5900E347227E58BD00087589 /* MoneyExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E346227E58BD00087589 /* MoneyExtensionTests.swift */; };
+		5900E349227E58DF00087589 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E348227E58DF00087589 /* DateExtensionTests.swift */; };
+		5900E34B227E58FF00087589 /* EventDetailVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E34A227E58FF00087589 /* EventDetailVMTests.swift */; };
+		5900E34D227E592200087589 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900E34C227E592200087589 /* StringExtensionTests.swift */; };
+		8FCC0CEA5B8714C98C82D2DF /* Pods_woopsicredi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C037E0631E50BC9A71A6AB6 /* Pods_woopsicredi.framework */; };
+		9F9A7BF0709DA41AB5C41E40 /* Pods_woopsicrediUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CF1250B0EAFD7887E2C0D3 /* Pods_woopsicrediUITests.framework */; };
+		F7AC841F1A330A22B0046CF0 /* Pods_woopsicrediTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADB1EAF44CA0B1F9AAC715A /* Pods_woopsicrediTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5900E2E7227E4E6A00087589 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5900E2C7227E4E6700087589 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5900E2CE227E4E6700087589;
+			remoteInfo = woopsicredi;
+		};
+		5900E2F2227E4E6A00087589 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5900E2C7227E4E6700087589 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5900E2CE227E4E6700087589;
+			remoteInfo = woopsicredi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30203CB87DFB8C4173074658 /* Pods-woopsicrediUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-woopsicrediUITests.release.xcconfig"; path = "Target Support Files/Pods-woopsicrediUITests/Pods-woopsicrediUITests.release.xcconfig"; sourceTree = "<group>"; };
+		311F9A07AFFBD92E124B1796 /* Pods-woopsicredi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-woopsicredi.debug.xcconfig"; path = "Target Support Files/Pods-woopsicredi/Pods-woopsicredi.debug.xcconfig"; sourceTree = "<group>"; };
+		3ADB1EAF44CA0B1F9AAC715A /* Pods_woopsicrediTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_woopsicrediTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5900E2CF227E4E6700087589 /* woopsicredi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = woopsicredi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5900E2D2227E4E6700087589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5900E2D4227E4E6700087589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5900E2D7227E4E6700087589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5900E2DA227E4E6700087589 /* woopsicredi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = woopsicredi.xcdatamodel; sourceTree = "<group>"; };
+		5900E2DC227E4E6A00087589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5900E2DF227E4E6A00087589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5900E2E1227E4E6A00087589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5900E2E6227E4E6A00087589 /* woopsicrediTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = woopsicrediTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5900E2EC227E4E6A00087589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5900E2F1227E4E6A00087589 /* woopsicrediUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = woopsicrediUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5900E2F5227E4E6A00087589 /* woopsicrediUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woopsicrediUITests.swift; sourceTree = "<group>"; };
+		5900E2F7227E4E6A00087589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5900E303227E4ECD00087589 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5900E30E227E513B00087589 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		5900E310227E516400087589 /* WSColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSColorPalette.swift; sourceTree = "<group>"; };
+		5900E312227E517B00087589 /* WSFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFont.swift; sourceTree = "<group>"; };
+		5900E314227E51D200087589 /* WoopNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopNetworkService.swift; sourceTree = "<group>"; };
+		5900E316227E520B00087589 /* WoopRequestErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopRequestErrorModel.swift; sourceTree = "<group>"; };
+		5900E318227E525800087589 /* WoopDataModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopDataModelProtocol.swift; sourceTree = "<group>"; };
+		5900E31A227E527500087589 /* WoopRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopRequestProtocol.swift; sourceTree = "<group>"; };
+		5900E31C227E529800087589 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5900E31E227E52AF00087589 /* DataResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseExtension.swift; sourceTree = "<group>"; };
+		5900E320227E52D700087589 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		5900E322227E52ED00087589 /* WSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSViewController.swift; sourceTree = "<group>"; };
+		5900E324227E531000087589 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		5900E326227E539500087589 /* EventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCoordinator.swift; sourceTree = "<group>"; };
+		5900E328227E53C800087589 /* EventsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListVC.swift; sourceTree = "<group>"; };
+		5900E32A227E53FE00087589 /* EventsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListVM.swift; sourceTree = "<group>"; };
+		5900E32C227E542000087589 /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
+		5900E32E227E544D00087589 /* EventDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVM.swift; sourceTree = "<group>"; };
+		5900E330227E546C00087589 /* CheckInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVC.swift; sourceTree = "<group>"; };
+		5900E332227E54A200087589 /* CheckInVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVM.swift; sourceTree = "<group>"; };
+		5900E334227E54BB00087589 /* LoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderVC.swift; sourceTree = "<group>"; };
+		5900E336227E54F000087589 /* EventsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListTableViewCell.swift; sourceTree = "<group>"; };
+		5900E338227E552600087589 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		5900E33A227E556800087589 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		5900E33C227E558500087589 /* FetchEventsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEventsResponse.swift; sourceTree = "<group>"; };
+		5900E33E227E55A600087589 /* FetchEventDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEventDetailsResponse.swift; sourceTree = "<group>"; };
+		5900E340227E55BD00087589 /* SendEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEventRequest.swift; sourceTree = "<group>"; };
+		5900E342227E561600087589 /* EventsServiceMOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceMOCK.swift; sourceTree = "<group>"; };
+		5900E344227E588D00087589 /* EventListVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListVMTests.swift; sourceTree = "<group>"; };
+		5900E346227E58BD00087589 /* MoneyExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExtensionTests.swift; sourceTree = "<group>"; };
+		5900E348227E58DF00087589 /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
+		5900E34A227E58FF00087589 /* EventDetailVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVMTests.swift; sourceTree = "<group>"; };
+		5900E34C227E592200087589 /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		5C037E0631E50BC9A71A6AB6 /* Pods_woopsicredi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_woopsicredi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81CF1250B0EAFD7887E2C0D3 /* Pods_woopsicrediUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_woopsicrediUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F1F97A2AACB8F5A8F4B473 /* Pods-woopsicrediTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-woopsicrediTests.debug.xcconfig"; path = "Target Support Files/Pods-woopsicrediTests/Pods-woopsicrediTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95FDBAC1BC1C1A2A627E0892 /* Pods-woopsicredi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-woopsicredi.release.xcconfig"; path = "Target Support Files/Pods-woopsicredi/Pods-woopsicredi.release.xcconfig"; sourceTree = "<group>"; };
+		C254F5B6CFA2742CC83772E6 /* Pods-woopsicrediTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-woopsicrediTests.release.xcconfig"; path = "Target Support Files/Pods-woopsicrediTests/Pods-woopsicrediTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD35A236FAB0424BC2FC936A /* Pods-woopsicrediUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-woopsicrediUITests.debug.xcconfig"; path = "Target Support Files/Pods-woopsicrediUITests/Pods-woopsicrediUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5900E2CC227E4E6700087589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCC0CEA5B8714C98C82D2DF /* Pods_woopsicredi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5900E2E3227E4E6A00087589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AC841F1A330A22B0046CF0 /* Pods_woopsicrediTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5900E2EE227E4E6A00087589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9A7BF0709DA41AB5C41E40 /* Pods_woopsicrediUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1980D1737A76592EB82CB58A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C037E0631E50BC9A71A6AB6 /* Pods_woopsicredi.framework */,
+				3ADB1EAF44CA0B1F9AAC715A /* Pods_woopsicrediTests.framework */,
+				81CF1250B0EAFD7887E2C0D3 /* Pods_woopsicrediUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25DBAC2A8BFB739D274DEE55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				311F9A07AFFBD92E124B1796 /* Pods-woopsicredi.debug.xcconfig */,
+				95FDBAC1BC1C1A2A627E0892 /* Pods-woopsicredi.release.xcconfig */,
+				91F1F97A2AACB8F5A8F4B473 /* Pods-woopsicrediTests.debug.xcconfig */,
+				C254F5B6CFA2742CC83772E6 /* Pods-woopsicrediTests.release.xcconfig */,
+				CD35A236FAB0424BC2FC936A /* Pods-woopsicrediUITests.debug.xcconfig */,
+				30203CB87DFB8C4173074658 /* Pods-woopsicrediUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5900E2C6227E4E6700087589 = {
+			isa = PBXGroup;
+			children = (
+				5900E2D1227E4E6700087589 /* woopsicredi */,
+				5900E2E9227E4E6A00087589 /* woopsicrediTests */,
+				5900E2F4227E4E6A00087589 /* woopsicrediUITests */,
+				5900E2D0227E4E6700087589 /* Products */,
+				25DBAC2A8BFB739D274DEE55 /* Pods */,
+				1980D1737A76592EB82CB58A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5900E2D0227E4E6700087589 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5900E2CF227E4E6700087589 /* woopsicredi.app */,
+				5900E2E6227E4E6A00087589 /* woopsicrediTests.xctest */,
+				5900E2F1227E4E6A00087589 /* woopsicrediUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5900E2D1227E4E6700087589 /* woopsicredi */ = {
+			isa = PBXGroup;
+			children = (
+				5900E309227E50AB00087589 /* Extensions */,
+				5900E308227E50A200087589 /* Service */,
+				5900E307227E509900087589 /* Resources */,
+				5900E306227E508C00087589 /* Features */,
+				5900E2D2227E4E6700087589 /* AppDelegate.swift */,
+				5900E2D4227E4E6700087589 /* ViewController.swift */,
+				5900E2D6227E4E6700087589 /* Main.storyboard */,
+				5900E2DC227E4E6A00087589 /* Assets.xcassets */,
+				5900E2DE227E4E6A00087589 /* LaunchScreen.storyboard */,
+				5900E2E1227E4E6A00087589 /* Info.plist */,
+				5900E2D9227E4E6700087589 /* woopsicredi.xcdatamodeld */,
+				5900E303227E4ECD00087589 /* AppCoordinator.swift */,
+			);
+			path = woopsicredi;
+			sourceTree = "<group>";
+		};
+		5900E2E9227E4E6A00087589 /* woopsicrediTests */ = {
+			isa = PBXGroup;
+			children = (
+				5900E2EC227E4E6A00087589 /* Info.plist */,
+				5900E344227E588D00087589 /* EventListVMTests.swift */,
+				5900E346227E58BD00087589 /* MoneyExtensionTests.swift */,
+				5900E348227E58DF00087589 /* DateExtensionTests.swift */,
+				5900E34A227E58FF00087589 /* EventDetailVMTests.swift */,
+				5900E34C227E592200087589 /* StringExtensionTests.swift */,
+			);
+			path = woopsicrediTests;
+			sourceTree = "<group>";
+		};
+		5900E2F4227E4E6A00087589 /* woopsicrediUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5900E2F5227E4E6A00087589 /* woopsicrediUITests.swift */,
+				5900E2F7227E4E6A00087589 /* Info.plist */,
+			);
+			path = woopsicrediUITests;
+			sourceTree = "<group>";
+		};
+		5900E306227E508C00087589 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5900E30A227E50FC00087589 /* Events */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5900E307227E509900087589 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5900E30E227E513B00087589 /* Money.swift */,
+				5900E310227E516400087589 /* WSColorPalette.swift */,
+				5900E312227E517B00087589 /* WSFont.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5900E308227E50A200087589 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5900E314227E51D200087589 /* WoopNetworkService.swift */,
+				5900E316227E520B00087589 /* WoopRequestErrorModel.swift */,
+				5900E318227E525800087589 /* WoopDataModelProtocol.swift */,
+				5900E31A227E527500087589 /* WoopRequestProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5900E309227E50AB00087589 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5900E31C227E529800087589 /* Coordinator.swift */,
+				5900E31E227E52AF00087589 /* DataResponseExtension.swift */,
+				5900E320227E52D700087589 /* StringExtension.swift */,
+				5900E322227E52ED00087589 /* WSViewController.swift */,
+				5900E324227E531000087589 /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5900E30A227E50FC00087589 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				5900E30D227E511700087589 /* Service */,
+				5900E30C227E511000087589 /* UI */,
+				5900E30B227E510600087589 /* Navigation */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		5900E30B227E510600087589 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5900E326227E539500087589 /* EventsCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		5900E30C227E511000087589 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5900E328227E53C800087589 /* EventsListVC.swift */,
+				5900E32A227E53FE00087589 /* EventsListVM.swift */,
+				5900E32C227E542000087589 /* EventDetailVC.swift */,
+				5900E32E227E544D00087589 /* EventDetailVM.swift */,
+				5900E330227E546C00087589 /* CheckInVC.swift */,
+				5900E332227E54A200087589 /* CheckInVM.swift */,
+				5900E334227E54BB00087589 /* LoaderVC.swift */,
+				5900E336227E54F000087589 /* EventsListTableViewCell.swift */,
+				5900E338227E552600087589 /* AlertVC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5900E30D227E511700087589 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5900E33A227E556800087589 /* EventsService.swift */,
+				5900E33C227E558500087589 /* FetchEventsResponse.swift */,
+				5900E33E227E55A600087589 /* FetchEventDetailsResponse.swift */,
+				5900E340227E55BD00087589 /* SendEventRequest.swift */,
+				5900E342227E561600087589 /* EventsServiceMOCK.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5900E2CE227E4E6700087589 /* woopsicredi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5900E2FA227E4E6A00087589 /* Build configuration list for PBXNativeTarget "woopsicredi" */;
+			buildPhases = (
+				05EF72E0BE6093A72FF22CF3 /* [CP] Check Pods Manifest.lock */,
+				5900E2CB227E4E6700087589 /* Sources */,
+				5900E2CC227E4E6700087589 /* Frameworks */,
+				5900E2CD227E4E6700087589 /* Resources */,
+				8C6B951C5026C9E32C7D9DF1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = woopsicredi;
+			productName = woopsicredi;
+			productReference = 5900E2CF227E4E6700087589 /* woopsicredi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5900E2E5227E4E6A00087589 /* woopsicrediTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5900E2FD227E4E6A00087589 /* Build configuration list for PBXNativeTarget "woopsicrediTests" */;
+			buildPhases = (
+				8A7D6147EC431C0024F7058E /* [CP] Check Pods Manifest.lock */,
+				5900E2E2227E4E6A00087589 /* Sources */,
+				5900E2E3227E4E6A00087589 /* Frameworks */,
+				5900E2E4227E4E6A00087589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5900E2E8227E4E6A00087589 /* PBXTargetDependency */,
+			);
+			name = woopsicrediTests;
+			productName = woopsicrediTests;
+			productReference = 5900E2E6227E4E6A00087589 /* woopsicrediTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5900E2F0227E4E6A00087589 /* woopsicrediUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5900E300227E4E6A00087589 /* Build configuration list for PBXNativeTarget "woopsicrediUITests" */;
+			buildPhases = (
+				598C4A25166E44C81FDE11F4 /* [CP] Check Pods Manifest.lock */,
+				5900E2ED227E4E6A00087589 /* Sources */,
+				5900E2EE227E4E6A00087589 /* Frameworks */,
+				5900E2EF227E4E6A00087589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5900E2F3227E4E6A00087589 /* PBXTargetDependency */,
+			);
+			name = woopsicrediUITests;
+			productName = woopsicrediUITests;
+			productReference = 5900E2F1227E4E6A00087589 /* woopsicrediUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5900E2C7227E4E6700087589 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					5900E2CE227E4E6700087589 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					5900E2E5227E4E6A00087589 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						TestTargetID = 5900E2CE227E4E6700087589;
+					};
+					5900E2F0227E4E6A00087589 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 5900E2CE227E4E6700087589;
+					};
+				};
+			};
+			buildConfigurationList = 5900E2CA227E4E6700087589 /* Build configuration list for PBXProject "woopsicredi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5900E2C6227E4E6700087589;
+			productRefGroup = 5900E2D0227E4E6700087589 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5900E2CE227E4E6700087589 /* woopsicredi */,
+				5900E2E5227E4E6A00087589 /* woopsicrediTests */,
+				5900E2F0227E4E6A00087589 /* woopsicrediUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5900E2CD227E4E6700087589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5900E2E0227E4E6A00087589 /* LaunchScreen.storyboard in Resources */,
+				5900E2DD227E4E6A00087589 /* Assets.xcassets in Resources */,
+				5900E2D8227E4E6700087589 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5900E2E4227E4E6A00087589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5900E2EF227E4E6A00087589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05EF72E0BE6093A72FF22CF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-woopsicredi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		598C4A25166E44C81FDE11F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-woopsicrediUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A7D6147EC431C0024F7058E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-woopsicrediTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6B951C5026C9E32C7D9DF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-woopsicredi/Pods-woopsicredi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-woopsicredi/Pods-woopsicredi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5900E2CB227E4E6700087589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5900E327227E539500087589 /* EventsCoordinator.swift in Sources */,
+				5900E304227E4ECD00087589 /* AppCoordinator.swift in Sources */,
+				5900E33D227E558500087589 /* FetchEventsResponse.swift in Sources */,
+				5900E30F227E513B00087589 /* Money.swift in Sources */,
+				5900E339227E552600087589 /* AlertVC.swift in Sources */,
+				5900E32B227E53FE00087589 /* EventsListVM.swift in Sources */,
+				5900E32D227E542000087589 /* EventDetailVC.swift in Sources */,
+				5900E319227E525800087589 /* WoopDataModelProtocol.swift in Sources */,
+				5900E2D5227E4E6700087589 /* ViewController.swift in Sources */,
+				5900E31B227E527500087589 /* WoopRequestProtocol.swift in Sources */,
+				5900E32F227E544D00087589 /* EventDetailVM.swift in Sources */,
+				5900E33F227E55A600087589 /* FetchEventDetailsResponse.swift in Sources */,
+				5900E317227E520B00087589 /* WoopRequestErrorModel.swift in Sources */,
+				5900E315227E51D200087589 /* WoopNetworkService.swift in Sources */,
+				5900E313227E517B00087589 /* WSFont.swift in Sources */,
+				5900E33B227E556800087589 /* EventsService.swift in Sources */,
+				5900E329227E53C800087589 /* EventsListVC.swift in Sources */,
+				5900E321227E52D700087589 /* StringExtension.swift in Sources */,
+				5900E325227E531000087589 /* DateExtension.swift in Sources */,
+				5900E323227E52ED00087589 /* WSViewController.swift in Sources */,
+				5900E341227E55BD00087589 /* SendEventRequest.swift in Sources */,
+				5900E331227E546C00087589 /* CheckInVC.swift in Sources */,
+				5900E335227E54BB00087589 /* LoaderVC.swift in Sources */,
+				5900E333227E54A200087589 /* CheckInVM.swift in Sources */,
+				5900E31D227E529800087589 /* Coordinator.swift in Sources */,
+				5900E337227E54F000087589 /* EventsListTableViewCell.swift in Sources */,
+				5900E343227E561600087589 /* EventsServiceMOCK.swift in Sources */,
+				5900E2D3227E4E6700087589 /* AppDelegate.swift in Sources */,
+				5900E2DB227E4E6700087589 /* woopsicredi.xcdatamodeld in Sources */,
+				5900E31F227E52AF00087589 /* DataResponseExtension.swift in Sources */,
+				5900E311227E516400087589 /* WSColorPalette.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5900E2E2227E4E6A00087589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5900E347227E58BD00087589 /* MoneyExtensionTests.swift in Sources */,
+				5900E349227E58DF00087589 /* DateExtensionTests.swift in Sources */,
+				5900E34B227E58FF00087589 /* EventDetailVMTests.swift in Sources */,
+				5900E34D227E592200087589 /* StringExtensionTests.swift in Sources */,
+				5900E345227E588D00087589 /* EventListVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5900E2ED227E4E6A00087589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5900E2F6227E4E6A00087589 /* woopsicrediUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5900E2E8227E4E6A00087589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5900E2CE227E4E6700087589 /* woopsicredi */;
+			targetProxy = 5900E2E7227E4E6A00087589 /* PBXContainerItemProxy */;
+		};
+		5900E2F3227E4E6A00087589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5900E2CE227E4E6700087589 /* woopsicredi */;
+			targetProxy = 5900E2F2227E4E6A00087589 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5900E2D6227E4E6700087589 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5900E2D7227E4E6700087589 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5900E2DE227E4E6A00087589 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5900E2DF227E4E6A00087589 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5900E2F8227E4E6A00087589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5900E2F9227E4E6A00087589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5900E2FB227E4E6A00087589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311F9A07AFFBD92E124B1796 /* Pods-woopsicredi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83NFHDY43B;
+				INFOPLIST_FILE = woopsicredi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.woopsicredi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5900E2FC227E4E6A00087589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FDBAC1BC1C1A2A627E0892 /* Pods-woopsicredi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83NFHDY43B;
+				INFOPLIST_FILE = woopsicredi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.woopsicredi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5900E2FE227E4E6A00087589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F1F97A2AACB8F5A8F4B473 /* Pods-woopsicrediTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83NFHDY43B;
+				INFOPLIST_FILE = woopsicrediTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.woopsicrediTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/woopsicredi.app/woopsicredi";
+			};
+			name = Debug;
+		};
+		5900E2FF227E4E6A00087589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C254F5B6CFA2742CC83772E6 /* Pods-woopsicrediTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83NFHDY43B;
+				INFOPLIST_FILE = woopsicrediTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.woopsicrediTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/woopsicredi.app/woopsicredi";
+			};
+			name = Release;
+		};
+		5900E301227E4E6A00087589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD35A236FAB0424BC2FC936A /* Pods-woopsicrediUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83NFHDY43B;
+				INFOPLIST_FILE = woopsicrediUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.woopsicrediUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = woopsicredi;
+			};
+			name = Debug;
+		};
+		5900E302227E4E6A00087589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30203CB87DFB8C4173074658 /* Pods-woopsicrediUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83NFHDY43B;
+				INFOPLIST_FILE = woopsicrediUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edwylugo.woopsicrediUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = woopsicredi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5900E2CA227E4E6700087589 /* Build configuration list for PBXProject "woopsicredi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5900E2F8227E4E6A00087589 /* Debug */,
+				5900E2F9227E4E6A00087589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5900E2FA227E4E6A00087589 /* Build configuration list for PBXNativeTarget "woopsicredi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5900E2FB227E4E6A00087589 /* Debug */,
+				5900E2FC227E4E6A00087589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5900E2FD227E4E6A00087589 /* Build configuration list for PBXNativeTarget "woopsicrediTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5900E2FE227E4E6A00087589 /* Debug */,
+				5900E2FF227E4E6A00087589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5900E300227E4E6A00087589 /* Build configuration list for PBXNativeTarget "woopsicrediUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5900E301227E4E6A00087589 /* Debug */,
+				5900E302227E4E6A00087589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5900E2D9227E4E6700087589 /* woopsicredi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5900E2DA227E4E6700087589 /* woopsicredi.xcdatamodel */,
+			);
+			currentVersion = 5900E2DA227E4E6700087589 /* woopsicredi.xcdatamodel */;
+			path = woopsicredi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5900E2C7227E4E6700087589 /* Project object */;
+}
