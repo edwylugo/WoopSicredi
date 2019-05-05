@@ -21,4 +21,4 @@ Siga as instruções para rodar o projeto.
 
 ## Screenshots: 
 
-![WoopSicredi](https://github.com/edwylugo/WoopSicredi/blob/master/woopsicredi/folder.png?raw=true)
+![WoopSicredi](woopsicredi/folder.png)
